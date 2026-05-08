@@ -180,6 +180,58 @@ section ul li span, section ol li .meta {
     align-items: center;
 }
 
+/* Experience */
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.job {
+    padding: 20px 0;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.job:first-child {
+    padding-top: 0;
+}
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 8px;
+}
+
+.employer {
+    display: block;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.role {
+    display: block;
+    color: #555;
+    font-size: 0.9rem;
+    font-style: italic;
+}
+
+.dates {
+    color: #888;
+    font-size: 0.85rem;
+    white-space: nowrap;
+    flex-shrink: 0;
+    padding-top: 2px;
+}
+
+.job p {
+    font-size: 0.95rem;
+    color: #444;
+    max-width: 640px;
+}
+
 /* Footer */
 footer {
     border-top: 1px solid #e5e5e5;
