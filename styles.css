@@ -190,6 +190,16 @@ section ul li span, section ol li .meta {
     text-decoration: underline;
 }
 
+/* Publication links */
+section ol li a {
+    color: #1a6ab1;
+    text-decoration: none;
+}
+
+section ol li a:hover {
+    text-decoration: underline;
+}
+
 /* Experience */
 .experience-list {
     display: flex;
