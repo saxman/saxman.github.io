@@ -148,9 +148,9 @@ h3:first-of-type {
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    /* white vignette: soft fade from photo to white at the edges */
-    -webkit-mask-image: radial-gradient(circle at center, #000 58%, transparent 100%);
-    mask-image: radial-gradient(circle at center, #000 58%, transparent 100%);
+    /* white vignette: subtle fade from photo to white at the edges */
+    -webkit-mask-image: radial-gradient(circle at center, #000 82%, transparent 100%);
+    mask-image: radial-gradient(circle at center, #000 82%, transparent 100%);
 }
 
 .headshot::after {
@@ -159,8 +159,8 @@ h3:first-of-type {
     inset: 6px;
     border-radius: 50%;
     pointer-events: none;
-    /* inner white ring reinforces the vignette */
-    box-shadow: inset 0 0 22px 8px #fff;
+    /* very light inner white ring */
+    box-shadow: inset 0 0 10px 2px #fff;
 }
 
 .about-heading h1 {
@@ -576,7 +576,7 @@ footer {
 
     .headshot::after {
         inset: 4px;
-        box-shadow: inset 0 0 16px 6px #fff;
+        box-shadow: inset 0 0 7px 1px #fff;
     }
 }
 
