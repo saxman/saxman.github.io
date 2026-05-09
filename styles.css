@@ -1,3 +1,13 @@
+:root {
+    --accent: #1a6ab1;
+    --accent-soft: rgba(26, 106, 177, 0.12);
+    --text: #1a1a1a;
+    --text-muted: #555;
+    --text-faint: #888;
+    --border: #e5e5e5;
+    --border-faint: #f0f0f0;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -9,11 +19,13 @@ html {
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     font-size: 16px;
     line-height: 1.6;
-    color: #222;
+    color: var(--text);
     background: #fff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 /* Nav */
@@ -79,23 +91,28 @@ section + section {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 2.25rem;
     font-weight: 700;
     margin-bottom: 8px;
+    letter-spacing: -0.02em;
 }
 
 h2 {
     font-size: 1.4rem;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    letter-spacing: -0.01em;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--accent);
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     font-weight: 600;
-    color: #555;
+    color: var(--accent);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.08em;
     margin: 28px 0 12px;
 }
 
@@ -114,14 +131,51 @@ section#about p {
     margin-bottom: 12px;
 }
 
+.cta {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+.cta strong {
+    color: var(--accent);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    align-items: center;
+}
+
+.contact-info span[aria-hidden] {
+    color: var(--text-faint);
+}
+
+.contact-info a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 .links {
     display: flex;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 .links a {
-    color: #1a6ab1;
+    color: var(--accent);
     text-decoration: none;
     font-size: 0.95rem;
 }
@@ -168,6 +222,59 @@ section ul li span, section ol li .meta {
     font-size: 0.9rem;
 }
 
+/* Publications: toggle + scholar link */
+.pubs-details {
+    margin-top: 8px;
+}
+
+.pubs-details summary {
+    cursor: pointer;
+    list-style: none;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    user-select: none;
+}
+
+.pubs-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.pubs-details summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.pubs-details[open] summary::after {
+    content: '\2212';
+}
+
+.pubs-details summary:hover {
+    text-decoration: underline;
+}
+
+.scholar-link {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.scholar-link a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.scholar-link a:hover {
+    text-decoration: underline;
+}
+
 /* Two-column list */
 .two-col {
     display: grid;
@@ -182,7 +289,7 @@ section ul li span, section ol li .meta {
 
 /* Projects */
 .project-list a {
-    color: #1a6ab1;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -193,7 +300,7 @@ section ul li span, section ol li .meta {
 /* Publication & research links */
 section ol li a,
 #research ul li a {
-    color: #1a6ab1;
+    color: var(--accent);
     text-decoration: none;
 }
 
@@ -243,7 +350,51 @@ section ol li a:hover,
     margin-top: 0;
 }
 
-/* Experience: Jobs */
+/* Experience: Jobs (collapsed by default) */
+.jobs-details {
+    margin-top: 32px;
+    border-top: 1px solid var(--border-faint);
+    padding-top: 16px;
+}
+
+.jobs-details summary {
+    cursor: pointer;
+    list-style: none;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+}
+
+.jobs-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.jobs-details summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+}
+
+.jobs-details[open] summary::after {
+    content: '\2212'; /* minus sign */
+}
+
+.jobs-details summary:hover {
+    text-decoration: underline;
+}
+
+.jobs-details[open] .experience-list {
+    margin-top: 16px;
+}
+
 .experience-list {
     display: flex;
     flex-direction: column;
@@ -297,24 +448,86 @@ section ol li a:hover,
 
 /* Footer */
 footer {
-    border-top: 1px solid #e5e5e5;
+    border-top: 1px solid var(--border);
     text-align: center;
-    padding: 24px;
-    color: #888;
+    padding: 28px 24px;
+    color: var(--text-faint);
     font-size: 0.85rem;
 }
 
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-links span {
+    color: var(--text-faint);
+}
+
+.copyright {
+    color: var(--text-faint);
+}
+
 /* Mobile */
-@media (max-width: 600px) {
-    nav ul {
+@media (max-width: 720px) {
+    nav {
         gap: 16px;
     }
 
+    nav ul {
+        gap: 14px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    .site-title {
+        font-size: 0.95rem;
+    }
+
+    .job-header {
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .dates {
+        padding-top: 0;
+    }
+}
+
+@media (max-width: 600px) {
     h1 {
-        font-size: 1.6rem;
+        font-size: 1.75rem;
     }
 
     .two-col {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        flex-wrap: wrap;
+        height: auto;
+        padding: 10px 16px;
+        gap: 8px 14px;
+    }
+
+    nav ul {
+        gap: 10px 14px;
     }
 }
