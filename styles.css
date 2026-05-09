@@ -128,20 +128,39 @@ h3:first-of-type {
     margin-bottom: 28px;
 }
 
-.monogram {
+.headshot {
     flex-shrink: 0;
-    width: 76px;
-    height: 76px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    background: linear-gradient(135deg, var(--accent) 0%, #2a8fd9 100%);
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 1.75rem;
-    letter-spacing: -0.02em;
-    box-shadow: 0 4px 14px rgba(26, 106, 177, 0.25);
+    background: #fff;
+    padding: 6px;
+    box-shadow:
+        0 0 0 1px rgba(0, 0, 0, 0.04),
+        0 8px 28px rgba(26, 106, 177, 0.18),
+        0 2px 6px rgba(0, 0, 0, 0.06);
+    position: relative;
+}
+
+.headshot img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    /* white vignette: soft fade from photo to white at the edges */
+    -webkit-mask-image: radial-gradient(circle at center, #000 58%, transparent 100%);
+    mask-image: radial-gradient(circle at center, #000 58%, transparent 100%);
+}
+
+.headshot::after {
+    content: '';
+    position: absolute;
+    inset: 6px;
+    border-radius: 50%;
+    pointer-events: none;
+    /* inner white ring reinforces the vignette */
+    box-shadow: inset 0 0 22px 8px #fff;
 }
 
 .about-heading h1 {
@@ -549,10 +568,15 @@ footer {
         gap: 16px;
     }
 
-    .monogram {
-        width: 60px;
-        height: 60px;
-        font-size: 1.4rem;
+    .headshot {
+        width: 96px;
+        height: 96px;
+        padding: 4px;
+    }
+
+    .headshot::after {
+        inset: 4px;
+        box-shadow: inset 0 0 16px 6px #fff;
     }
 }
 
