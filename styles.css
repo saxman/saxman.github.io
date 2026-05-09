@@ -297,7 +297,51 @@ section ol li a:hover,
     margin-top: 0;
 }
 
-/* Experience: Jobs */
+/* Experience: Jobs (collapsed by default) */
+.jobs-details {
+    margin-top: 32px;
+    border-top: 1px solid var(--border-faint);
+    padding-top: 16px;
+}
+
+.jobs-details summary {
+    cursor: pointer;
+    list-style: none;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+}
+
+.jobs-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.jobs-details summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+    transition: transform 0.2s ease;
+}
+
+.jobs-details[open] summary::after {
+    content: '\2212'; /* minus sign */
+}
+
+.jobs-details summary:hover {
+    text-decoration: underline;
+}
+
+.jobs-details[open] .experience-list {
+    margin-top: 16px;
+}
+
 .experience-list {
     display: flex;
     flex-direction: column;
