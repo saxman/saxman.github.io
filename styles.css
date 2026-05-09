@@ -202,7 +202,48 @@ section ol li a:hover,
     text-decoration: underline;
 }
 
-/* Experience */
+/* Experience: Roles */
+.roles-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-bottom: 16px;
+}
+
+.role-card h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.role-card > p {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+}
+
+.role-card ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.role-card ul li {
+    display: list-item;
+    border: none;
+    padding: 4px 0;
+    color: #444;
+    font-size: 0.95rem;
+}
+
+#experience h3 {
+    margin-top: 32px;
+}
+
+#experience h3:first-of-type {
+    margin-top: 0;
+}
+
+/* Experience: Jobs */
 .experience-list {
     display: flex;
     flex-direction: column;
