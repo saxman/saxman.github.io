@@ -190,13 +190,15 @@ section ul li span, section ol li .meta {
     text-decoration: underline;
 }
 
-/* Publication links */
-section ol li a {
+/* Publication & research links */
+section ol li a,
+#research ul li a {
     color: #1a6ab1;
     text-decoration: none;
 }
 
-section ol li a:hover {
+section ol li a:hover,
+#research ul li a:hover {
     text-decoration: underline;
 }
 
