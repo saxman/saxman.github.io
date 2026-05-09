@@ -180,6 +180,16 @@ section ul li span, section ol li .meta {
     align-items: center;
 }
 
+/* Projects */
+.project-list a {
+    color: #1a6ab1;
+    text-decoration: none;
+}
+
+.project-list a:hover {
+    text-decoration: underline;
+}
+
 /* Experience */
 .experience-list {
     display: flex;
