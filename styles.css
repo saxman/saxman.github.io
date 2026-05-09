@@ -131,10 +131,47 @@ section#about p {
     margin-bottom: 12px;
 }
 
+.cta {
+    border-left: 3px solid var(--accent);
+    background: var(--accent-soft);
+    padding: 12px 16px;
+    border-radius: 0 6px 6px 0;
+    margin-top: 16px;
+    font-size: 0.95rem;
+}
+
+.cta strong {
+    color: var(--accent);
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 16px;
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    align-items: center;
+}
+
+.contact-info span[aria-hidden] {
+    color: var(--text-faint);
+}
+
+.contact-info a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
 .links {
     display: flex;
     gap: 16px;
-    margin-top: 20px;
+    margin-top: 12px;
+    flex-wrap: wrap;
 }
 
 .links a {
