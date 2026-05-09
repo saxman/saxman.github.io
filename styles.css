@@ -222,6 +222,59 @@ section ul li span, section ol li .meta {
     font-size: 0.9rem;
 }
 
+/* Publications: toggle + scholar link */
+.pubs-details {
+    margin-top: 8px;
+}
+
+.pubs-details summary {
+    cursor: pointer;
+    list-style: none;
+    color: var(--accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    user-select: none;
+}
+
+.pubs-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.pubs-details summary::after {
+    content: '+';
+    font-size: 1.2rem;
+    line-height: 1;
+    font-weight: 400;
+}
+
+.pubs-details[open] summary::after {
+    content: '\2212';
+}
+
+.pubs-details summary:hover {
+    text-decoration: underline;
+}
+
+.scholar-link {
+    margin-top: 20px;
+    font-size: 0.95rem;
+}
+
+.scholar-link a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+.scholar-link a:hover {
+    text-decoration: underline;
+}
+
 /* Two-column list */
 .two-col {
     display: grid;
