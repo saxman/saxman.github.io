@@ -343,6 +343,20 @@ section ul li span, section ol li .meta {
     text-decoration: underline;
 }
 
+.content-type {
+    align-self: flex-start;
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--accent);
+    background-color: var(--accent-soft);
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-bottom: 4px;
+}
+
 /* Publication & research links */
 section ol li a,
 #research ul li a {
