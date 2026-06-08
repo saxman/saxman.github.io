@@ -1,6 +1,6 @@
 # Paul R Saxman
 
-**AI and engineering leadership for global health and biomedical research**
+**Engineering and AI leadership for global health and biomedical research**
 
 Seattle, WA, USA
 
