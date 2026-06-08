@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul R. Saxman — Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --muted: #444;
+            --rule: #bbb;
+            --link: #1a4d8f;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #e8e8ea;
+            color: var(--ink);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 9.4pt;
+            line-height: 1.2;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+
+        /* Each .page is one printed sheet (US Letter). */
+        .page {
+            padding: 0.45in 0.6in;
+            background: #fff;
+        }
+
+        /* On-screen preview: show each .page as a paper sheet. */
+        @media screen {
+            .page {
+                width: 8.5in;
+                min-height: 11in;
+                margin: 24px auto;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            }
+        }
+
+        /* Header */
+        .name {
+            text-align: center;
+            font-size: 19pt;
+            font-weight: 700;
+            margin: 0 0 1pt;
+            letter-spacing: 0.2px;
+        }
+        .tagline {
+            text-align: center;
+            font-style: italic;
+            font-size: 10.5pt;
+            color: var(--muted);
+            margin: 0 0 4pt;
+        }
+        .contact {
+            text-align: center;
+            font-size: 9pt;
+            margin: 0 0 8pt;
+            color: var(--ink);
+        }
+        .contact .sep { color: var(--rule); margin: 0 2px; }
+
+        .summary {
+            margin: 0 0 2pt;
+            text-align: justify;
+        }
+
+        /* Section headers */
+        h2.section {
+            font-size: 10.5pt;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin: 9pt 0 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1.2px solid var(--ink);
+        }
+        h2.section .note {
+            font-weight: 400;
+            font-size: 8pt;
+            font-style: italic;
+            letter-spacing: 0;
+            text-transform: none;
+            color: var(--muted);
+        }
+
+        /* Job / entry blocks */
+        .entry { margin-bottom: 5pt; }
+        .entry-title {
+            margin: 0;
+            font-size: 9.6pt;
+        }
+        .entry-title .org { font-weight: 700; }
+        .entry-title .role { font-style: italic; }
+        .entry-dates {
+            margin: 0 0 1pt;
+            font-style: italic;
+            font-size: 8.5pt;
+            color: var(--muted);
+        }
+
+        ul {
+            margin: 1pt 0 0;
+            padding-left: 15pt;
+        }
+        li { margin-bottom: 1.5pt; }
+
+        .block { margin-bottom: 4pt; }
+        .block strong { font-weight: 700; }
+
+        .skills p { margin: 0 0 4pt; }
+        .skills .label { font-weight: 700; }
+
+        /* Print: each .page becomes exactly one physical page */
+        @page {
+            size: letter;
+            margin: 0;
+        }
+        @media print {
+            html, body { background: #fff; }
+            .page + .page { page-break-before: always; }
+            a { color: var(--ink); }
+            .entry, .block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="page">
+    <h1 class="name">Paul R. Saxman</h1>
+    <p class="tagline">AI and engineering leadership for global health and biomedical research</p>
+    <p class="contact">
+        Seattle, WA
+        <span class="sep">&middot;</span> <a href="mailto:saxman@gmail.com">saxman@gmail.com</a>
+        <span class="sep">&middot;</span> <a href="https://saxman.info" target="_blank" rel="noopener">saxman.info</a>
+        <span class="sep">&middot;</span> <a href="https://linkedin.com/in/saxman" target="_blank" rel="noopener">linkedin.com/in/saxman</a>
+        <span class="sep">&middot;</span> <a href="https://github.com/saxman" target="_blank" rel="noopener">github.com/saxman</a>
+        <span class="sep">&middot;</span> <a href="https://scholar.google.com/citations?user=1k_KVTUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </p>
+
+    <p class="summary">Advanced computing, AI/ML, research engineering, developer relations, and software engineering leader with 20+ years experience across global health, biomedical research, and personal health technology. Currently leading AI and software engineering for health and disease modeling at the Gates Foundation's Institute for Disease Modeling. This work, and prior work at Google (Health, Maps, Android Wear, Glass), Amazon (Halo, Echo), AWS (Academic Medicine, Education &amp; Research), and the University of Michigan Health System exemplify my overarching career goal of accelerating science and decision-making that improves human health. M.Sc. Biomedical Informatics (UMich); co-author of 15 peer-reviewed papers with 4,600+ citations; 10+ years managing global cross-functional teams. Actively building open-source agentic AI systems for augmenting scientific research.</p>
+
+    <h2 class="section">Experience</h2>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Gates Foundation, Institute for Disease Modeling</span>, <span class="role">Senior Software Engineering Manager, Advanced Spatial Computing</span></p>
+        <p class="entry-dates">Nov 2024 &ndash; Present</p>
+        <ul>
+            <li>Leading an AI and software engineering team delivering infectious disease and health models, modeling frameworks, and agentic AI systems that directly inform foundation strategy and investment decisions for critical health/disease programs.</li>
+            <li>Pioneering agentic AI techniques that enhance access and usability of health/disease models for researchers and global health partners, accelerating scientific discovery and policy decision-making that affects millions of lives.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Global Technical Lead, Education and Academic Research</span></p>
+        <p class="entry-dates">Oct 2022 &ndash; Oct 2024</p>
+        <ul>
+            <li>Led global technical programs and strategic initiatives (generative AI, machine learning, advanced computing, federated research), accelerating cloud adoption across K&ndash;12, higher education, edtech, and academic research worldwide.</li>
+            <li>Co-authored multiple, high-impact guides with strategic AWS partners on ML and generative AI for higher education, including case studies with Harvard Medical School, Stanford, and IU (a top 100 university by enrollment).</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Head of US Academic Medicine Solutions Architecture, Pr. Solutions Architect, Senior Manager</span></p>
+        <p class="entry-dates">Apr 2020 &ndash; Oct 2022</p>
+        <ul>
+            <li>Led the US Academic Medicine Solutions Architecture team (subject matter experts in EHRs, medical imaging, HL7/FHIR/OMOP, bioinformatics, HPC, genomics, and AI/ML), guiding customers on cloud architectures for AI/ML-based clinical decision support, high-throughput genomics, and precision medicine.</li>
+            <li>Authored strategic AWS prescriptive guidance whitepaper on modernizing healthcare-data strategy, covering interoperability, security and compliance, research enablement, AI/ML, and cost sustainability.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon (Emerging Devices)</span>, <span class="role">Principal Solutions Architect, Senior Engineering Manager</span></p>
+        <p class="entry-dates">Feb 2018 &ndash; Apr 2020</p>
+        <ul>
+            <li>Led design and development of novel third-party data, AI (Alexa), and ML (health inferencing) services for Amazon Halo, Echo Buds, and Echo Loop: Amazon's first health and wellness consumer devices.</li>
+            <li>Led and launched critical technical integrations with key partnerships: Cerner, John Hancock, and Weight Watchers.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Android)</span>, <span class="role">Global Developer Relations Lead, Senior Manager</span></p>
+        <p class="entry-dates">Feb 2016 &ndash; Feb 2018</p>
+        <ul>
+            <li>Led the global, cross-functional Android Devices, Media &amp; Fitness Developer Relations team responsible for Android device launches and support across wearables, TVs, and tablets (e.g. Google Wear, Google Fit, Google TV).</li>
+            <li>Set strategy and produced launch-critical developer content (talks, tutorials, code samples) for major Android platform releases and developer events including Google I/O and Google Developer Days (global developer outreach).</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google</span>, <span class="role">Global Developer Partnerships Lead, Senior Manager</span></p>
+        <p class="entry-dates">Jan 2014 &ndash; Feb 2016</p>
+        <ul>
+            <li>Managed the global Health &amp; Wellness Developer Partnerships team for launch-critical partnerships across Google Wear, Glass, Maps, and Fit (<a href="https://android.googleblog.com/2014/10/google-fit.html" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Led third-party go-to-market strategy for Google product launches with health and wellness use cases during the period.</li>
+        </ul>
+    </div>
+</div>
+
+<div class="page">
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Maps)</span>, <span class="role">Staff Developer Advocate</span></p>
+        <p class="entry-dates">Jan 2012 &ndash; Jan 2014</p>
+        <ul>
+            <li>Scaled developer outreach for the Google Maps APIs to tens of thousands of developers through YouTube content.</li>
+            <li>Presented strategic content at Google I/O on geospatial visualizations, mobile mapping, and location-aware experiences.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Health)</span>, <span class="role">Lead Developer Advocate</span></p>
+        <p class="entry-dates">Mar 2010 &ndash; Jan 2012</p>
+        <ul>
+            <li>Led key partner technical integrations (e.g. Fitbit) as Google Health pivoted from a personal health record to a health &amp; wellness platform supporting clinical data, smart scales, wearables, and sleep trackers (<a href="https://techcrunch.com/2010/09/15/google-health-gets-a-wellness-makeover-now-integrated-with-fitbit-and-cardiotrainer/" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Represented Google at HHS ONC on PHRs in meaningful use and architected interoperability APIs that enabled tens of thousands of users to transition their Google Health records to other systems as the platform was sunset (<a href="https://googleblog.blogspot.com/2011/06/update-on-google-health-and-google.html" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Created Google Flu Vaccine Finder, which ensured that millions could find influenza/H1N1 vaccines through Flu.gov (<a href="https://stacks.cdc.gov/view/cdc/27360/cdc_27360_DS1.pdf" target="_blank" rel="noopener">ref</a>).</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">University of Michigan Health System</span>, <span class="role">Tech Lead / Manager, Systems Architect, Biomedical Informatician</span></p>
+        <p class="entry-dates">Feb 2005 &ndash; Mar 2010</p>
+        <ul>
+            <li>Architected interoperable, HIPAA-compliant clinical research platforms and cross-institute federated research systems at the Michigan Institute for Clinical &amp; Health Research (MICHR), and managed the engineering team delivering software systems for clinical and translational research.</li>
+        </ul>
+    </div>
+
+    <h2 class="section">Selected Work &amp; Projects <span class="note">(full list at <a href="https://saxman.info" target="_blank" rel="noopener">saxman.info</a>)</span></h2>
+    <ul>
+        <li class="block"><strong>Modernizing your healthcare-data strategy.</strong> AWS Prescriptive Guidance whitepaper, 2023. Procedural and technical guidance for healthcare executives on interoperability, security, research enablement, and cost sustainability, framed around the Quadruple Aim.</li>
+        <li class="block"><strong>HMS People Heart Study streamlines digital research with AWS.</strong> AWS Industries Blog, 2025. How Harvard Medical School uses AWS HealthLake to ingest provider records and deliver personalized cardiovascular-risk insights.</li>
+        <li class="block"><strong>Generative AI in education.</strong> AWS Public Sector Blog, 2023. Reference patterns and architecture for turning recorded course lectures into generative-AI-powered learning experiences for higher education.</li>
+        <li class="block"><strong>Research Foundations on Amazon Web Services.</strong> Stanford Deep Data Research Center, 2022. Academic lecture introducing the foundations of cloud-based scientific computing for research teams and PIs.</li>
+        <li class="block"><strong>Personal R&amp;D in agentic AI.</strong> Open-source exploration of agentic patterns for scientific research and personalization: workflow orchestration, MCP tool integration, multi-tier memory, GraphRAG, and prompt optimization, applied to literature retrieval, knowledge graph construction, and persistent personal context. <a href="https://github.com/saxman" target="_blank" rel="noopener">github.com/saxman</a></li>
+    </ul>
+
+    <h2 class="section">Selected Publications <span class="note">(full list at <a href="https://saxman.info" target="_blank" rel="noopener">saxman.info</a>)</span></h2>
+    <ul>
+        <li class="block">Bahmani A, Cha K, Alavi A, et al. <em>Achieving inclusive healthcare through integrating education and research with AI and personalized curricula.</em> Nature Communications Medicine, 2025.</li>
+        <li class="block">Klappenbach JA, <strong>Saxman PR</strong>, Cole JR, Schmidt TM. <em>rrnDB: the ribosomal RNA operon copy number database.</em> Nucleic Acids Research, 2001. ~1,300 citations.</li>
+        <li class="block">Maidak BL, Cole JR, Lilburn TG, Parker CT, <strong>Saxman PR</strong>, et al. <em>The RDP (ribosomal database project) continues.</em> Nucleic Acids Research, 2000. ~3,250 citations.</li>
+    </ul>
+
+    <h2 class="section">Skills &amp; Credentials</h2>
+    <div class="skills">
+        <p><span class="label">AI / ML.</span> Agentic AI systems, LLM inference pipelines, RAG, vector and graph memory, MCP, prompt and workflow orchestration, evaluation and benchmarking. Hugging Face Transformers, PyTorch, CUDA-backed GPU infrastructure.</p>
+        <p><span class="label">Architecture &amp; engineering.</span> Microservices, serverless, event-driven systems, full-stack web and mobile, data and analytics pipelines, healthcare data standards (HL7, FHIR, OMOP), HIPAA-compliant systems, federated research platforms.</p>
+        <p><span class="label">Education.</span> M.Sc. Biomedical Informatics, University of Michigan Medical School, 2006&ndash;2008 (clinical informatics, complex systems, network theory). B.Sc. Computer Science &amp; B.Sc. Computer Engineering, Michigan State University, 1994&ndash;1999, cognate in Biomedical Engineering.</p>
+        <p><span class="label">Certifications &amp; Patents.</span> AWS Certified Solutions Architect, Professional &middot; AWS Certified Machine Learning, Specialty &middot; AWS Certified Developer, Associate &middot; AWS Certified Cloud Practitioner. US Patent: <em>Systems and Methods of Using a Temporary Private Key Between Two Devices</em>, 2012.</p>
+    </div>
+</div>
+
+</body>
+</html>
