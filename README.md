@@ -12,7 +12,8 @@ Leading software and AI engineering for modeling frameworks at the Gates Foundat
 [GitHub](https://github.com/saxman) ·
 [Hugging Face](https://huggingface.co/saxman) ·
 [Google Scholar](https://scholar.google.com/citations?user=1k_KVTUAAAAJ&hl=en) ·
-[LinkedIn](https://linkedin.com/in/saxman)
+[LinkedIn](https://linkedin.com/in/saxman) ·
+[Resume (PDF)](resume.pdf)
 
 ---
 
@@ -56,6 +57,7 @@ Helping enterprise customers and external developers build successful products o
 
 - Principal Solutions Architect at AWS guiding academic medicine customers on cloud architectures for clinical decision support, high-throughput genomics, and precision medicine.
 - Managed strategic AWS initiatives around generative AI, machine learning, advanced computing, and federated research for academic institutions worldwide.
+- Led academic research launch partnerships for [Service Workbench on AWS](https://aws.amazon.com/blogs/publicsector/announcing-service-workbench-solution-collaborative-research-environment) (2020), with Harvard Medical School's Department of Biomedical Informatics, the Stanford Deep Data Research Center (Department of Genetics), and other top US R1 universities, and for its successor, [Research and Engineering Studio on AWS](https://aws.amazon.com/blogs/hpc/new-research-and-engineering-studio-on-aws/) (2023). Led the teams delivering these solutions to partners and fed partner requirements into the product roadmaps.
 - Staff Developer Advocate for Google Maps, scaling developer messaging and supporting geospatial data visualizations and mobile mapping applications.
 - Lead Developer Advocate for Google Health, supporting the platform's pivot to integrated clinical and device/wearable data, and represented Google at HHS ONC on PHRs in meaningful use.
 - Managed launch-critical health & wellness developer partnerships for Google Wear, Glass, Maps, and Fit, and key Amazon Halo partners (Cerner, John Hancock, Weight Watchers).
@@ -195,6 +197,7 @@ Helping enterprise customers and external developers build successful products o
 [saxman@gmail.com](mailto:saxman@gmail.com) ·
 [GitHub](https://github.com/saxman) ·
 [Google Scholar](https://scholar.google.com/citations?user=1k_KVTUAAAAJ&hl=en) ·
-[LinkedIn](https://linkedin.com/in/saxman)
+[LinkedIn](https://linkedin.com/in/saxman) ·
+[Resume (PDF)](resume.pdf)
 
 © 2025 Paul Saxman
