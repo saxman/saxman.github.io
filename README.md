@@ -4,7 +4,7 @@
 
 Seattle, WA, USA
 
-Leading software and AI engineering for modeling frameworks at the Gates Foundation's Institute for Disease Modeling. My 20+ years of work experience across Google, Amazon, AWS, and academic medicine come together around a single arc: accelerating the science and decision-making that ultimately improves global health. M.Sc. Biomedical Informatics (UMich); co-author of 15 peer-reviewed papers with 4,600+ citations; 10+ years managing global cross-functional teams.
+Leading AI and research engineering at the Gates Foundation's Institute for Disease Modeling, building tools that help researchers turn models and data into evidence for global health decisions. My 20+ years of work experience across Google, Amazon, AWS, and academic medicine come together around a single arc: accelerating the science and decision-making that ultimately improves global health. M.Sc. Biomedical Informatics (UMich); co-author of 15 peer-reviewed papers with 4,600+ citations; 10+ years managing global cross-functional teams.
 
 > Open to advisory roles, speaking engagements, and collaborations in AI/ML, biomedical research, and global health.
 
@@ -36,7 +36,7 @@ Leading software and AI engineering for modeling frameworks at the Gates Foundat
 
 10+ years leading global and domestic teams across solutions architecture, software engineering, open source software, and developer relations.
 
-- *(present)* Leading an AI and software engineering team at the Gates Foundation's Institute for Disease Modeling, delivering models, modeling frameworks, and AI systems that inform investment decisions for critical disease and maternal/infant health programs.
+- *(present)* Leading an AI and research engineering team that builds disease and health models, modeling frameworks, and AI systems, equipping Gates Foundation researchers to produce the evidence behind strategy and investment decisions for malaria, HIV, polio, maternal/infant health, and other priority programs.
 - Led global technical programs at AWS for education and academic research customers worldwide, spanning K–12, higher education, and academic medicine.
 - Led the US Academic Medicine Solutions Architecture team at AWS, composed of subject matter experts in EHRs, medical imaging, FHIR/OMOP, bioinformatics, HPC, and genomics.
 - Built and managed cross-functional Developer Relations and Partnerships teams at Google for Android (wearables, TVs, tablets), Glass, Maps, Fit, and Health.
@@ -87,7 +87,7 @@ Helping enterprise customers and external developers build successful products o
 | Google (Health) | Lead Developer Advocate | Mar 2010 – Jan 2012 |
 | University of Michigan Health System | Tech Lead/Manager, Systems Architect, Biomedical Informatician | Feb 2005 – Mar 2010 |
 
-**Gates Foundation, Institute for Disease Modeling** — Driving improvements in global health by delivering novel infectious disease and health models and software frameworks that directly inform the Gates Foundation's strategy and investment decisions for malaria, HIV, polio, maternal/infant health, and other priority programs. Pioneering modeling and AI techniques that enhance model access and usability for researchers and global health partners.
+**Gates Foundation, Institute for Disease Modeling** — Leading AI and research engineering to advance global health, directing the delivery of infectious disease and health models, modeling frameworks, and AI systems that help researchers build the evidence behind the Gates Foundation's strategy and investment decisions for malaria, HIV, polio, maternal/infant health, and other priority programs. Guiding the team's development of modeling and AI techniques that make models easier for researchers and global health partners to access and use.
 
 **Amazon Web Services (AWS)** — Led global technical programs to accelerate adoption of cloud services by education and academic research institutions worldwide. Developed strategic initiatives around generative AI, machine learning, advanced computing, and federated research for K–12, higher education, and academic research customers.
 
