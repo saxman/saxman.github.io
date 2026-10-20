@@ -4,7 +4,7 @@
 
 Seattle, WA, USA
 
-Leading AI and research engineering at the Gates Foundation's Institute for Disease Modeling, building tools that help researchers turn models and data into evidence for global health decisions. My 20+ years of work experience across Google, Amazon, AWS, and academic medicine come together around a single arc: accelerating the science and decision-making that ultimately improves global health. M.Sc. Biomedical Informatics (UMich); co-author of 15 peer-reviewed papers with 4,600+ citations; 10+ years managing global cross-functional teams.
+Leading AI and research engineering at the Gates Foundation's Institute for Disease Modeling, equipping researchers to turn models and data into evidence for global health decisions. My 20+ years across Google, Amazon, AWS, and academic medicine follow a single arc: partnering closely with users to build solutions that scale access to science and amplify its impact on human health. M.Sc. Biomedical Informatics (UMich); 10+ years managing global cross-functional teams.
 
 > Open to advisory roles, speaking engagements, and collaborations in AI/ML, biomedical research, and global health.
 
