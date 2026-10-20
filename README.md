@@ -13,7 +13,8 @@ Leading software and AI engineering for modeling frameworks at the Gates Foundat
 [Hugging Face](https://huggingface.co/saxman) ·
 [Google Scholar](https://scholar.google.com/citations?user=1k_KVTUAAAAJ&hl=en) ·
 [LinkedIn](https://linkedin.com/in/saxman) ·
-[Resume (PDF)](resume.pdf)
+[Resume (PDF)](resume.pdf) ·
+[CV (PDF)](cv.pdf)
 
 ---
 
@@ -198,6 +199,7 @@ Helping enterprise customers and external developers build successful products o
 [GitHub](https://github.com/saxman) ·
 [Google Scholar](https://scholar.google.com/citations?user=1k_KVTUAAAAJ&hl=en) ·
 [LinkedIn](https://linkedin.com/in/saxman) ·
-[Resume (PDF)](resume.pdf)
+[Resume (PDF)](resume.pdf) ·
+[CV (PDF)](cv.pdf)
 
 © 2025 Paul Saxman

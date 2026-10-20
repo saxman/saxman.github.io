@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul R. Saxman — Curriculum Vitae</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap">
+    <style>
+        :root {
+            --ink: #1a1a1a;
+            --muted: #444;
+            --rule: #bbb;
+            --link: #1a4d8f;
+        }
+
+        * { box-sizing: border-box; }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: #e8e8ea;
+            color: var(--ink);
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 9.4pt;
+            line-height: 1.2;
+        }
+
+        a {
+            color: var(--link);
+            text-decoration: none;
+        }
+        a:hover { text-decoration: underline; }
+
+        /* Unlike resume.html, content flows across as many printed pages as needed. */
+        .document {
+            background: #fff;
+        }
+
+        @media screen {
+            .document {
+                width: 8.5in;
+                margin: 24px auto;
+                padding: 0.5in 0.6in;
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+            }
+        }
+
+        /* Header */
+        .name {
+            text-align: center;
+            font-size: 19pt;
+            font-weight: 700;
+            margin: 0 0 1pt;
+            letter-spacing: 0.2px;
+        }
+        .tagline {
+            text-align: center;
+            font-style: italic;
+            font-size: 10.5pt;
+            color: var(--muted);
+            margin: 0 0 4pt;
+        }
+        .contact {
+            text-align: center;
+            font-size: 9pt;
+            margin: 0 0 8pt;
+            color: var(--ink);
+        }
+        .contact .sep { color: var(--rule); margin: 0 2px; }
+
+        .summary {
+            margin: 0 0 2pt;
+            text-align: justify;
+        }
+
+        /* Section headers */
+        h2.section {
+            font-size: 10.5pt;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin: 9pt 0 5pt;
+            padding-bottom: 2pt;
+            border-bottom: 1.2px solid var(--ink);
+        }
+        h3.subsection {
+            font-size: 9.6pt;
+            font-weight: 700;
+            margin: 7pt 0 3pt;
+        }
+
+        /* Job / entry blocks */
+        .entry { margin-bottom: 5pt; }
+        .entry-title {
+            margin: 0;
+            font-size: 9.6pt;
+        }
+        .entry-title .org { font-weight: 700; }
+        .entry-title .role { font-style: italic; }
+        .entry-dates {
+            margin: 0 0 1pt;
+            font-style: italic;
+            font-size: 8.5pt;
+            color: var(--muted);
+        }
+
+        ul, ol {
+            margin: 1pt 0 0;
+            padding-left: 15pt;
+        }
+        li { margin-bottom: 2pt; }
+
+        .block { margin-bottom: 4pt; }
+        .block strong { font-weight: 700; }
+        .kind {
+            font-size: 8pt;
+            font-weight: 600;
+            letter-spacing: 0.4px;
+            text-transform: uppercase;
+            color: var(--muted);
+        }
+
+        .skills p { margin: 0 0 4pt; }
+        .skills .label { font-weight: 700; }
+
+        @page {
+            size: letter;
+            margin: 0.45in 0.6in;
+        }
+        @media print {
+            html, body { background: #fff; }
+            a { color: var(--ink); }
+            h2.section, h3.subsection { page-break-after: avoid; }
+            .entry, .block { page-break-inside: avoid; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="document">
+    <h1 class="name">Paul R. Saxman</h1>
+    <p class="tagline">Engineering and AI leadership for global health and biomedical research</p>
+    <p class="contact">
+        Seattle, WA
+        <span class="sep">&middot;</span> <a href="mailto:saxman@gmail.com">saxman@gmail.com</a>
+        <span class="sep">&middot;</span> <a href="https://saxman.info" target="_blank" rel="noopener">saxman.info</a>
+        <span class="sep">&middot;</span> <a href="https://linkedin.com/in/saxman" target="_blank" rel="noopener">linkedin.com/in/saxman</a>
+        <span class="sep">&middot;</span> <a href="https://github.com/saxman" target="_blank" rel="noopener">github.com/saxman</a>
+        <span class="sep">&middot;</span> <a href="https://huggingface.co/saxman" target="_blank" rel="noopener">huggingface.co/saxman</a>
+        <span class="sep">&middot;</span> <a href="https://scholar.google.com/citations?user=1k_KVTUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+    </p>
+
+    <p class="summary">Advanced computing, AI/ML, research engineering, developer relations, and software engineering leader with 20+ years experience across global health, biomedical research, and personal health technology. Currently leading AI and software engineering for health and disease modeling at the Gates Foundation's Institute for Disease Modeling. This work, and prior work at Google (Health, Maps, Android Wear, Glass), Amazon (Halo, Echo), AWS (Academic Medicine, Education &amp; Research), and the University of Michigan Health System exemplify my overarching career goal of accelerating science and decision-making that improves human health. M.Sc. Biomedical Informatics (UMich); co-author of 15 peer-reviewed papers with 4,600+ citations; 10+ years managing global cross-functional teams. Actively building open-source agentic AI systems for augmenting scientific research.</p>
+
+    <h2 class="section">Experience</h2>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Gates Foundation, Institute for Disease Modeling</span>, <span class="role">Senior Software Engineering Manager, Advanced Spatial Computing</span></p>
+        <p class="entry-dates">Nov 2024 &ndash; Present</p>
+        <ul>
+            <li>Leading an AI and software engineering team delivering infectious disease and health models, modeling frameworks, and agentic AI systems that directly inform foundation strategy and investment decisions for malaria, HIV, polio, maternal/infant health, and other priority programs.</li>
+            <li>Architecting modeling and AI software frameworks for global health, accelerating scientific discovery and policy decision-making.</li>
+            <li>Pioneering agentic AI techniques that enhance access and usability of health/disease models for researchers and global health partners, accelerating scientific discovery and policy decision-making that affects millions of lives.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Global Technical Lead, Education and Academic Research</span></p>
+        <p class="entry-dates">Oct 2022 &ndash; Oct 2024</p>
+        <ul>
+            <li>Led global technical programs and strategic initiatives (generative AI, machine learning, advanced computing, federated research), accelerating cloud adoption across K&ndash;12, higher education, edtech, and academic research worldwide.</li>
+            <li>Co-authored multiple, high-impact guides with strategic AWS partners on ML and generative AI for higher education, including case studies with Harvard Medical School, Stanford, and IU (a top 100 university by enrollment).</li>
+            <li>Led academic launch partnerships for <a href="https://aws.amazon.com/blogs/hpc/new-research-and-engineering-studio-on-aws/" target="_blank" rel="noopener">Research and Engineering Studio on AWS</a> (2023), Service Workbench's successor, leading the teams delivering the solution to partners and feeding partner requirements into the product roadmap.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon Web Services (AWS)</span>, <span class="role">Head of US Academic Medicine Solutions Architecture, Pr. Solutions Architect, Senior Manager</span></p>
+        <p class="entry-dates">Apr 2020 &ndash; Oct 2022</p>
+        <ul>
+            <li>Led the US Academic Medicine Solutions Architecture team (subject matter experts in EHRs, medical imaging, HL7/FHIR/OMOP, bioinformatics, HPC, genomics, and AI/ML), guiding customers on cloud architectures for AI/ML-based clinical decision support, high-throughput genomics, and precision medicine.</li>
+            <li>Authored strategic AWS prescriptive guidance whitepaper on modernizing healthcare-data strategy, covering interoperability, security and compliance, research enablement, AI/ML, and cost sustainability.</li>
+            <li>Led launch partnerships for <a href="https://aws.amazon.com/blogs/publicsector/announcing-service-workbench-solution-collaborative-research-environment" target="_blank" rel="noopener">Service Workbench on AWS</a> (2020, open-source secure research environments) with Harvard Medical School's Department of Biomedical Informatics, the Stanford Deep Data Research Center (Department of Genetics), and other top US R1 universities, shaping the product roadmap.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Amazon (Emerging Devices)</span>, <span class="role">Principal Solutions Architect, Senior Engineering Manager</span></p>
+        <p class="entry-dates">Feb 2018 &ndash; Apr 2020</p>
+        <ul>
+            <li>Led design and development of novel third-party data, AI (Alexa), and ML (health inferencing) services for Amazon Halo, Echo Buds, and Echo Loop: Amazon's first health and wellness consumer devices.</li>
+            <li>Launched critical technical integrations with key partners: Cerner, John Hancock, and Weight Watchers.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Android)</span>, <span class="role">Global Developer Relations Lead, Senior Manager</span></p>
+        <p class="entry-dates">Feb 2016 &ndash; Feb 2018</p>
+        <ul>
+            <li>Led the global, cross-functional Android Devices, Media &amp; Fitness Developer Relations team responsible for Android device launches and support across wearables, TVs, and tablets (e.g. Google Wear, Google Fit, Google TV).</li>
+            <li>Set strategy and produced launch-critical developer content (talks, tutorials, code samples) for major Android platform releases and developer events including Google I/O and Google Developer Days.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google</span>, <span class="role">Global Developer Partnerships Lead, Senior Manager</span></p>
+        <p class="entry-dates">Jan 2014 &ndash; Feb 2016</p>
+        <ul>
+            <li>Managed the global Health &amp; Wellness Developer Partnerships team for launch-critical partnerships across Google Wear, Glass, Maps, and Fit (<a href="https://android.googleblog.com/2014/10/google-fit.html" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Led third-party go-to-market strategy for all Google product launches with health and wellness use cases.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Maps)</span>, <span class="role">Staff Developer Advocate</span></p>
+        <p class="entry-dates">Jan 2012 &ndash; Jan 2014</p>
+        <ul>
+            <li>Scaled developer outreach for the Google Maps APIs to tens of thousands of developers through YouTube content.</li>
+            <li>Focused on mobile app development, geospatial data visualizations, and helping developers create compelling map applications at scale.</li>
+            <li>Presented strategic content at Google I/O on geospatial visualizations, mobile mapping, and location-aware experiences.</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">Google (Health)</span>, <span class="role">Lead Developer Advocate</span></p>
+        <p class="entry-dates">Mar 2010 &ndash; Jan 2012</p>
+        <ul>
+            <li>Led key partner technical integrations (e.g. Fitbit) as Google Health pivoted from a personal health record to a health &amp; wellness platform supporting clinical data, smart scales, wearables, and sleep trackers (<a href="https://techcrunch.com/2010/09/15/google-health-gets-a-wellness-makeover-now-integrated-with-fitbit-and-cardiotrainer/" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Represented Google at HHS ONC on PHRs in meaningful use and architected interoperability APIs that enabled tens of thousands of users to transition their Google Health records to other systems as the platform was sunset (<a href="https://googleblog.blogspot.com/2011/06/update-on-google-health-and-google.html" target="_blank" rel="noopener">ref</a>).</li>
+            <li>Created Google Flu Vaccine Finder, which ensured that millions could find influenza/H1N1 vaccines through Flu.gov (<a href="https://stacks.cdc.gov/view/cdc/27360/cdc_27360_DS1.pdf" target="_blank" rel="noopener">ref</a>).</li>
+        </ul>
+    </div>
+
+    <div class="entry">
+        <p class="entry-title"><span class="org">University of Michigan Health System</span>, <span class="role">Tech Lead / Manager, Systems Architect, Biomedical Informatician</span></p>
+        <p class="entry-dates">Feb 2005 &ndash; Mar 2010</p>
+        <ul>
+            <li>Architected interoperable, HIPAA-compliant clinical research platforms and cross-institute federated research systems at the Michigan Institute for Clinical &amp; Health Research (MICHR), and managed the engineering team delivering software systems for clinical and translational research.</li>
+            <li>Researched and developed data mining tools, visualizations, and ontology-based systems for clinical informatics and inter-institutional biomedical collaboration.</li>
+            <li>Contributed to network analyses of cancer symptoms and renal disease genes, advancing molecular-based disease classification.</li>
+        </ul>
+    </div>
+
+    <h2 class="section">Education</h2>
+    <ul>
+        <li class="block"><strong>M.Sc. Biomedical Informatics</strong>, University of Michigan Medical School, 2006&ndash;2008. Clinical informatics, complex systems, and network theory.</li>
+        <li class="block"><strong>B.Sc. Computer Science &amp; B.Sc. Computer Engineering</strong>, Michigan State University, 1994&ndash;1999. Cognate in Biomedical Engineering.</li>
+    </ul>
+
+    <h2 class="section">Publications</h2>
+    <p class="block">15 peer-reviewed publications, 4,600+ citations (<a href="https://scholar.google.com/citations?user=1k_KVTUAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>).</p>
+    <ol>
+        <li class="block">Bahmani A, Cha K, Alavi A, et al. <a href="https://www.nature.com/articles/s43856-025-01034-y" target="_blank" rel="noopener">Achieving inclusive healthcare through integrating education and research with AI and personalized curricula.</a> <em>Communications Medicine</em>, 2025.</li>
+        <li class="block">Tenenbaum JD, Whetzel PL, Anderson K, et al. <a href="https://doi.org/10.1016/j.jbi.2010.10.003" target="_blank" rel="noopener">The Biomedical Resource Ontology (BRO) to enable resource discovery in clinical and translational research.</a> <em>Journal of Biomedical Informatics</em>, 2011.</li>
+        <li class="block">Zhang GQ, Siegler T, <strong>Saxman P</strong>, et al. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3041531/" target="_blank" rel="noopener">VISAGE: a query interface for clinical research.</a> <em>Summit on Translational Bioinformatics</em>, 2010.</li>
+        <li class="block">Bhavnani SK, Bellala G, Ganesan A, et al. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3647463/" target="_blank" rel="noopener">The nested structure of cancer symptoms.</a> <em>Methods of Information in Medicine</em>, 2010.</li>
+        <li class="block">Bhavnani SK, Ganesan A, Hall T, et al. <a href="https://doi.org/10.1186/1756-0500-3-296" target="_blank" rel="noopener">Discovering hidden relationships between renal diseases and regulated genes through 3D network visualizations.</a> <em>BMC Research Notes</em>, 2010.</li>
+        <li class="block">Mirel BR, Wright Z, Tenenbaum JD, <strong>Saxman P</strong>, Smith KA. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3041532/" target="_blank" rel="noopener">User requirements for exploring a resource inventory for clinical research.</a> <em>Summit on Translational Bioinformatics</em>, 2010.</li>
+        <li class="block">Boyd AD, <strong>Saxman PR</strong>, Hunscher DA, et al. <a href="https://doi.org/10.1197/jamia.M2985" target="_blank" rel="noopener">The University of Michigan Honest Broker: a Web-based service for clinical and translational research and practice.</a> <em>Journal of the American Medical Informatics Association</em>, 2009.</li>
+        <li class="block">Bhavnani SK, Eichinger F, Martini S, <strong>Saxman P</strong>, et al. <a href="https://doi.org/10.1186/1471-2105-10-S9-S3" target="_blank" rel="noopener">Network analysis of genes regulated in renal diseases: implications for a molecular-based classification.</a> <em>BMC Bioinformatics</em>, 2009.</li>
+        <li class="block">Patel R, Hanratty M, Johnson J, <strong>Saxman P</strong>, et al. <a href="https://pubmed.ncbi.nlm.nih.gov/18999234/" target="_blank" rel="noopener">Casepedia: a Web 2.0 case repository enabling collaborative learning.</a> <em>AMIA Annual Symposium Proceedings</em>, 2008.</li>
+        <li class="block">Boyd AD, Hunscher DA, Kramer AJ, et al. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC1560785/" target="_blank" rel="noopener">The &lsquo;Honest Broker&rsquo; method of integrating interdisciplinary research data.</a> <em>AMIA Annual Symposium Proceedings</em>, 2005.</li>
+        <li class="block">Urbance JW, Cole J, <strong>Saxman P</strong>, Tiedje JM. <a href="https://doi.org/10.1093/nar/gkg032" target="_blank" rel="noopener">BSD: the biodegradative strain database.</a> <em>Nucleic Acids Research</em>, 2003.</li>
+        <li class="block">Klappenbach JA, <strong>Saxman PR</strong>, Cole JR, Schmidt TM. <a href="https://academic.oup.com/nar/article/29/1/181/1116185" target="_blank" rel="noopener">rrnDB: the ribosomal RNA operon copy number database.</a> <em>Nucleic Acids Research</em>, 2001. ~1,300 citations.</li>
+        <li class="block">Maidak BL, Cole JR, Lilburn TG, et al. <a href="https://academic.oup.com/nar/article/29/1/173/1116006" target="_blank" rel="noopener">The RDP-II (ribosomal database project).</a> <em>Nucleic Acids Research</em>, 2001.</li>
+        <li class="block">Maidak BL, Cole JR, Lilburn TG, Parker CT, <strong>Saxman PR</strong>, et al. <a href="https://academic.oup.com/nar/article/28/1/173/2384352" target="_blank" rel="noopener">The RDP (ribosomal database project) continues.</a> <em>Nucleic Acids Research</em>, 2000. ~3,250 citations.</li>
+        <li class="block">Marsh TL, <strong>Saxman P</strong>, Cole J, Tiedje J. <a href="https://doi.org/10.1128/aem.66.8.3616-3620.2000" target="_blank" rel="noopener">Terminal restriction fragment length polymorphism analysis program, a web-based research tool for microbial community analysis.</a> <em>Applied and Environmental Microbiology</em>, 2000. ~445 citations.</li>
+    </ol>
+
+    <h2 class="section">Research Projects &amp; Systems</h2>
+    <ul>
+        <li class="block"><strong><a href="https://doi.org/10.1016/j.jbi.2010.10.003" target="_blank" rel="noopener">Biomedical Resource Ontology (BRO) &amp; Resource Discovery System</a>.</strong> Federated, inter-institutional ontology and discovery system enabling semantic annotation and search of biomedical resources across CTSA institutions.</li>
+        <li class="block"><strong><a href="https://doi.org/10.1197/jamia.M2985" target="_blank" rel="noopener">University of Michigan Honest Broker</a>.</strong> Web Services-based platform for sharing de-identified clinical and research data across medical disciplines and institutions while preserving patient privacy.</li>
+        <li class="block"><strong><a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3041531/" target="_blank" rel="noopener">VISAGE</a>.</strong> Visual Aggregator and Explorer: a query interface for clinical research with ontology-driven query building, management, and exploratory data mining for cohort identification.</li>
+        <li class="block"><strong><a href="https://academic.oup.com/nar/article/29/1/173/1116006" target="_blank" rel="noopener">Ribosomal Database Project (RDP-II)</a>.</strong> Aligned and annotated rRNA sequence database with phylogenetic tree derivation and analysis services, supporting microbial taxonomy worldwide.</li>
+        <li class="block"><strong><a href="https://doi.org/10.1093/nar/gkg032" target="_blank" rel="noopener">Biodegradative Strain Database (BSD)</a>.</strong> Web-accessible database of degradative bacteria and the hazardous substances they degrade, with linked literature, patents, and chemical data.</li>
+        <li class="block"><strong><a href="https://academic.oup.com/nar/article/29/1/181/1116185" target="_blank" rel="noopener">Ribosomal RNA Operon Copy Number Database (rrnDB)</a>.</strong> Phylogenetically arranged database of rRNA operon copy number across prokaryotes, supporting evolutionary and microbial community analysis.</li>
+        <li class="block"><strong><a href="https://doi.org/10.1128/aem.66.8.3616-3620.2000" target="_blank" rel="noopener">Terminal Restriction Fragment Length Polymorphism Analysis Program (TAP T-RFLP)</a>.</strong> Web-based research tool for in silico restriction digestion of 16S rDNA sequences, enabling microbial community analysis and genetic fingerprinting.</li>
+    </ul>
+
+    <h2 class="section">Selected Work, Talks &amp; Lectures</h2>
+    <ul>
+        <li class="block"><span class="kind">Blog Post</span> <strong><a href="https://aws.amazon.com/blogs/industries/hms-people-heart-study-streamlines-digital-research-with-aws/" target="_blank" rel="noopener">HMS People Heart Study streamlines digital research with AWS</a>.</strong> AWS Industries Blog, June 2025. How Harvard Medical School's People Heart Study uses AWS HealthLake and connected services to ingest patients' provider records and deliver personalized cardiovascular-risk insights through an iPhone app.</li>
+        <li class="block"><span class="kind">Blog Post</span> <strong><a href="https://aws.amazon.com/blogs/publicsector/germanys-international-university-of-applied-sciences-automates-creation-of-educational-videos-using-generative-ai-serverless-on-aws/" target="_blank" rel="noopener">Germany's International University of Applied Sciences automates creation of educational videos using generative AI, serverless on AWS</a>.</strong> AWS Public Sector Blog, May 2024. How IU, Germany's largest university with 130,000+ students, replaced a manual video production workflow with a serverless, generative-AI pipeline capable of producing the 24,000 educational videos needed for 2024.</li>
+        <li class="block"><span class="kind">Whitepaper</span> <strong><a href="https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-modern-healthcare-data/introduction.html" target="_blank" rel="noopener">Modernizing your healthcare-data strategy</a>.</strong> AWS Prescriptive Guidance, November 2023. Procedural, organizational, and technical guidance for healthcare executives advancing a data-driven mission, covering interoperability, security and compliance, research enablement, and cost sustainability, framed around the Quadruple Aim.</li>
+        <li class="block"><span class="kind">Blog Post</span> <strong><a href="https://aws.amazon.com/blogs/publicsector/generative-ai-education-building-ai-solutions-using-course-lecture-content/" target="_blank" rel="noopener">Generative AI in education: Building AI solutions using course lecture content</a>.</strong> AWS Public Sector Blog, October 2023. Reference patterns and architecture for turning recorded course lectures into generative AI-powered learning experiences, including summarization, homework generation, chatbots, and personalized learning features for higher education.</li>
+        <li class="block"><span class="kind">Lecture</span> <strong><a href="https://www.youtube.com/watch?v=fifoPAgDOYU" target="_blank" rel="noopener">Research Foundations on Amazon Web Services</a>.</strong> Stanford Deep Data Research Center, July 2022. Academic lecture introducing the foundations of running research workloads on AWS, oriented toward academic research teams and PIs new to cloud-based scientific computing.</li>
+        <li class="block"><span class="kind">Blog Post</span> <strong><a href="https://aws.amazon.com/blogs/industries/hummingbird-a-tool-for-effective-prediction-of-performance-and-costs-of-genomics-workloads-on-aws/" target="_blank" rel="noopener">Hummingbird: a tool for effective prediction of performance and costs of genomics workloads on AWS</a>.</strong> AWS Industries Blog, March 2022. Introduces Hummingbird, an open-source Stanford tool that profiles genomics workloads and recommends the fastest and most cost-effective EC2 instance types, illustrated with BWA-MEM and GATK HaplotypeCaller workflows.</li>
+        <li class="block"><span class="kind">Blog Post</span> <strong><a href="https://aws.amazon.com/blogs/industries/improving-the-utilization-of-wearable-device-data-using-an-aws-data-lake/" target="_blank" rel="noopener">Improving the utilization of wearable device data using an AWS data lake</a>.</strong> AWS Industries Blog, February 2021. How healthcare organizations can build an AWS data lake to ingest, normalize, and analyze wearable-device data across manufacturers and sampling rates, enabling research aggregation and machine learning on patient-generated health data.</li>
+        <li class="block"><span class="kind">Webinar</span> <strong><a href="https://pages.awscloud.com/IMAGINE-January-2021-Session1.html" target="_blank" rel="noopener">Texas A&amp;M University's approach to modernizing research through the cloud</a>.</strong> AWS IMAGINE for Education, January 2021. Fireside chat with Dr. Joshua Kissee on STAR (Secure Technologies for Aggie Researchers), Texas A&amp;M's self-service cloud platform for research computing, secure data collaboration, and AI/ML workloads.</li>
+        <li class="block"><span class="kind">Conference Talk</span> <strong><a href="https://www.youtube.com/watch?v=e6GZveYJxzA" target="_blank" rel="noopener">Building Rich Media Experiences with Android</a>.</strong> Google Developer Days India, December 2017. Co-presented with Dan Galpin on building outstanding media apps for Android, covering the Android Media Framework, picture-in-picture, MediaStyle notifications, the Channels and Programs API for Android TV, and high-performance audio for media creation apps.</li>
+        <li class="block"><span class="kind">Webinar</span> <strong><a href="https://www.youtube.com/watch?v=kckJl6MVot0" target="_blank" rel="noopener">UXD: What is User Context and Why Does it Matter?</a></strong> Android Developers, January 2014. Episode in the User Experience Design for Developers series, distilling user-research data on how people use their devices, the expectations they bring, and how those expectations shift with context.</li>
+        <li class="block"><span class="kind">Webinar</span> <strong><a href="https://www.youtube.com/watch?v=iPq69CnYxMA" target="_blank" rel="noopener">Google Maps API: Snazzy Maps</a>.</strong> Google Developers, December 2013. Spotlight on Snazzy Maps, a community-driven gallery of styled-map presets for the Google Maps API.</li>
+        <li class="block"><span class="kind">Conference Talk</span> <strong><a href="https://www.youtube.com/watch?v=ggxGc_yT80s" target="_blank" rel="noopener">Making Location Meaningful with the Google Maps APIs</a>.</strong> Google I/O 2013. Co-presented with Kasia Derc-Fenske on going beyond raw position by using destinations, history, and behavior to deliver richer location-aware experiences with the Google Maps APIs.</li>
+        <li class="block"><span class="kind">Conference Talk</span> <strong><a href="https://www.youtube.com/watch?v=Nli4Vy2zGYA" target="_blank" rel="noopener">Command and Control in the Living Room: Building Second Screen Apps for Google TV</a>.</strong> Google I/O 2012. Co-presented with Dave Fisher on the second-screen pattern for Google TV: using smartphones, tablets, and PCs as companion controllers and content sources for the living-room device.</li>
+        <li class="block"><span class="kind">Conference Talk</span> <strong><a href="https://www.youtube.com/watch?v=CXFoxHeHF2A" target="_blank" rel="noopener">Google I/O 101: Introduction to Google TV</a>.</strong> Google I/O 2012. Introductory session walking developers through the basics of building for Google TV, the Android-powered device at the center of the living room.</li>
+    </ul>
+
+    <h2 class="section">Open-Source Projects</h2>
+    <ul>
+        <li class="block"><strong><a href="https://github.com/saxman/aimu" target="_blank" rel="noopener">aimu</a>.</strong> A Python library (AI Modeling Utilities) for finding out what generative AI models and systems are actually capable of, and understanding how they work. One provider-agnostic interface spans text, image, audio, and speech across local and cloud backends (Ollama, Hugging Face, llama.cpp, Anthropic, OpenAI, Gemini). Includes agents and code-controlled workflows, typed streaming that labels reasoning, tool calls, and output separately, MCP tools and agent skills, semantic and document memory, prompt tuning, benchmarking, and a full async mirror.</li>
+        <li class="block"><strong><a href="https://github.com/saxman/kokua" target="_blank" rel="noopener">kokua</a>.</strong> A hackable, always-on personal AI assistant built on aimu, designed to show how agentic systems actually work. It chats in the terminal or the browser, writes and runs its own skills, connects to remote MCP services, delegates subtasks to isolated sub-agents, schedules its own proactive work, and remembers facts and documents across conversations, streaming reasoning, tool calls, and results as they happen.</li>
+        <li class="block"><strong><a href="https://github.com/saxman/genscai" target="_blank" rel="noopener">genscai</a>.</strong> Recipes and notebooks applying generative AI to science and research workflows, focused on health and infectious disease modeling: automated literature retrieval, information extraction, document embedding and clustering with science-specific models (SPECTER, NV-Embed), classification, knowledge graph construction, and agent development.</li>
+    </ul>
+
+    <h2 class="section">Skills, Certifications &amp; Patents</h2>
+    <div class="skills">
+        <p><span class="label">AI / ML.</span> Agentic AI systems, LLM inference pipelines, RAG, vector and graph memory, MCP, prompt and workflow orchestration, evaluation and benchmarking. Hugging Face Transformers, PyTorch, CUDA-backed GPU infrastructure.</p>
+        <p><span class="label">Architecture &amp; engineering.</span> Microservices, serverless, event-driven systems, full-stack web and mobile, data and analytics pipelines, healthcare data standards (HL7, FHIR, OMOP), HIPAA-compliant systems, federated research platforms.</p>
+        <p><span class="label">Certifications.</span> AWS Certified Solutions Architect, Professional &middot; AWS Certified Machine Learning, Specialty &middot; AWS Certified Developer, Associate &middot; AWS Certified Cloud Practitioner.</p>
+        <p><span class="label">Patents.</span> <em>Systems and Methods of Using a Temporary Private Key Between Two Devices</em>, 2012.</p>
+    </div>
+</div>
+
+</body>
+</html>
