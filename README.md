@@ -46,7 +46,7 @@ Leading AI and research engineering at the Gates Foundation's Institute for Dise
 
 Designing and delivering data-intensive, scientific, and clinical software systems with an emphasis on clean architecture, usable APIs, and user-centered design.
 
-- *(present)* Architecting modeling and AI software frameworks for global health at the Gates Foundation, accelerating scientific discovery and policy decision-making.
+- *(present)* Guiding architectural decisions for modeling and AI frameworks at the Gates Foundation, and leading broader architecture decisions for end-to-end scientific workflows across the Institute, from model development and calibration through analysis.
 - Led design and development of novel third-party data, AI, and ML services for Amazon Halo, Echo Buds, and Echo Loop (Amazon's first health and wellness consumer devices).
 - Architected interoperable, HIPAA-compliant clinical research platforms and cross-institute federated research systems at the University of Michigan.
 - Led architecture of Google's medical record interoperability services/APIs for Google Health, and developed full-stack, large-scale web applications, including Google's Flu Vaccine Finder.
