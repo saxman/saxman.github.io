@@ -1,0 +1,5 @@
+# Keep the markdown resume and CV in the repo only. Without this, GitHub Pages
+# renders them to resume.html and cv.html, overwriting the hand-built pages.
+exclude:
+  - resume.md
+  - cv.md
